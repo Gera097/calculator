@@ -11,7 +11,7 @@
                     "number number number operators"
                     "number number number operators"
                     "number number number operators"
-                    "zero zero zero operators";
+                    "zero zero zero equal";
     margin-left: auto;
     margin-right: auto;
     width: 500px;
@@ -44,12 +44,11 @@ button:hover {
     grid-area: zero;
 }
 .operators {
-    background-color: #df974c;
     grid-area: operators;
     display: grid;
 }
 .operator, .equal {
-    background-color: inherit;
+    background-color: #df974c;
     color: white;
 }
 
