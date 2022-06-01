@@ -48,11 +48,12 @@ button:hover {
     grid-area: operators;
     display: grid;
 }
-.operator {
+.operator, .equal {
     background-color: inherit;
     color: white;
 }
-.operator:hover {
+
+.operator:hover, .equal:hover {
     background-color: #dfb07e;
 }
 
