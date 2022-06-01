@@ -1,12 +1,18 @@
 import Calculator from "./calculator.js"
 
 document.querySelector('.numbers').addEventListener('click', function(event){
-    Calculator.concat(event.target.innerText)
-    document.querySelector('.screen').innerText = Calculator.displayedNumber
+    if (event.target.tagName === "BUTTON") {
+        Calculator.concat(event.target.innerText)
+        document.querySelector('.screen').innerText = Calculator.displayedNumber
+    }
+    event.stopPropagation();
 })
 document.querySelector('.zero').addEventListener('click', function(event){
-    Calculator.concat(event.target.innerText)
-    document.querySelector('.screen').innerText = Calculator.displayedNumber
+    if (event.target.tagName === "BUTTON") {
+        Calculator.concat(event.target.innerText)
+        document.querySelector('.screen').innerText = Calculator.displayedNumber
+    }
+    event.stopPropagation();
 })
 document.querySelector('.operators').addEventListener('click', function(event){
     Calculator.semiResult = Calculator.displayedNumber;
