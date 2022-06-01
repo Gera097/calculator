@@ -35,11 +35,20 @@ class Calculator {
         this.displayedNumber = "0"
         this.operator = ""
     }
+    back(){
+        if(this.displayedNumber === '0'){}
+        else if(this.displayedNumber.length === 1){
+            this.displayedNumber = '0'
+        }
+        else {
+            this.displayedNumber = this.displayedNumber.slice(0, -1);
+        }
+        
+    }
     resolveOperator(){
         switch (this.operator) {
             case "×":
                 this.displayedNumber = this.multiply(this.semiResult, this.displayedNumber)
-                console.log(`semiResult: ${this.semiResult}`)
                 break;
             case "÷":
                 this.displayedNumber = this.divide(this.semiResult, this.displayedNumber)
