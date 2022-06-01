@@ -24,6 +24,9 @@ button {
 button:hover {
     background-color: #ebebeb;
 }
+button:active {
+    background-color: #d8d1d1;
+}
 .screen {
     grid-area: screen;
     color: white;
@@ -54,6 +57,9 @@ button:hover {
 
 .operator:hover, .equal:hover {
     background-color: #dfb07e;
+}
+.operator:active, .equal:active {
+    background-color: #dd994f;
 }
 
 .f-large {
